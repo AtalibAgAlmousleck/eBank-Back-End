@@ -1,0 +1,23 @@
+# ===============================
+# = Hibernate datasource
+# ===============================
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/ebank
+    username: postgres
+    password: Admin
+  # ===============================
+  # = JPA configurations
+  # ===============================
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: POSTGRESQL
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+# ===============================
+# = JPA configurations
+# ===============================
